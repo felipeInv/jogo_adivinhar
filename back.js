@@ -1,5 +1,5 @@
+var resultado = parseInt(Math.random()*1001);
 function verificar(){
-var resultado = 369
 var numero = window.document.getElementById('num')
 var resposta = window.document.getElementById('resposta')
 if(numero.value.length > 0){
@@ -12,7 +12,7 @@ if(numero.value.length > 0){
         resposta.style.color = "red"
         resposta.innerHTML = "Menos"
     }
-    else{
+    else if(numero < resultado){
         resposta.style.color = "red"
         resposta.innerHTML = "Mais"
     }
