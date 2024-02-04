@@ -9,13 +9,16 @@ body{
     background-color: #1E1E1E;
     min-width: 100vh;
     color: white;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 100vh;
 }
-body,main{
+main{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
+    margin-top: 10%;
+    width: 80vw;
 }
 h1{
     font-size: 2.5em;
@@ -76,4 +79,14 @@ section{
     background-position: center center;
     background-size: contain;
     background-color: #c91306;
+}
+article{
+    position: relative;
+    border-left: 1px solid white;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10%;
+    height: 90vh;
+    overflow: scroll;
 }
